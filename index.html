@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Node Socket.io Chat App</title>
+
+    <!-- Socket.io client connection  -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>  <!--is needed to connect your frontend (browser) to the backend (server) using Socket.io-->>
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <nav>
+        <img class="logo" src="Icon.png" alt="Logo">
+        <h1>Welcome to discuss chat App</h1>
+    </nav>      
+    
+    <div class="container" id="messageContainer">
+        <!-- Messages will be dynamically added here -->
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container"> <!--A <form> gives us built-in support for "submit"-->
+            <input type="text" name="messageInp" id="messageInp" placeholder="Type your message...">
+            <button class="btn" type="submit">send</button>
+        </form>
+    </div>
+    
+</body>
+</html>
